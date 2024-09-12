@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A24BBEA2C92096200344E5E /* FractalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBE92C92096200344E5E /* FractalApp.swift */; };
+		2A24BBEC2C92096200344E5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBEB2C92096200344E5E /* ContentView.swift */; };
+		2A24BBF12C92096300344E5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A24BBF02C92096300344E5E /* Preview Assets.xcassets */; };
+		2A24BBF32C92096300344E5E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBF22C92096300344E5E /* Persistence.swift */; };
+		2A24BBF62C92096300344E5E /* Fractal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBF42C92096300344E5E /* Fractal.xcdatamodeld */; };
+		2A24BC002C92096300344E5E /* FractalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBFF2C92096300344E5E /* FractalTests.swift */; };
+		2A24BC0A2C92096300344E5E /* FractalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BC092C92096300344E5E /* FractalUITests.swift */; };
+		2A24BC0C2C92096300344E5E /* FractalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BC0B2C92096300344E5E /* FractalUITestsLaunchTests.swift */; };
+		2A4C69FD2C926F7F0099D365 /* RSSFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69F92C926F7F0099D365 /* RSSFeedManager.swift */; };
+		2A4C69FE2C926F7F0099D365 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69FA2C926F7F0099D365 /* CacheManager.swift */; };
+		2A4C69FF2C926F7F0099D365 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69FB2C926F7F0099D365 /* NetworkManager.swift */; };
+		2A4C6A032C9284250099D365 /* Fractal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C6A012C9284250099D365 /* Fractal.xcdatamodeld */; };
+		2A79BA3E2C920ECB003DA433 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA2F2C920ECB003DA433 /* BookmarkManager.swift */; };
+		2A79BA402C920ECB003DA433 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA322C920ECB003DA433 /* NewsFeedViewModel.swift */; };
+		2A79BA412C920ECB003DA433 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA342C920ECB003DA433 /* Article.swift */; };
+		2A79BA432C920ECB003DA433 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA382C920ECB003DA433 /* BookmarksView.swift */; };
+		2A79BA442C920ECB003DA433 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA392C920ECB003DA433 /* NewsFeedView.swift */; };
+		2A79BA452C920ECB003DA433 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA3A2C920ECB003DA433 /* SettingsView.swift */; };
+		2A79BA482C9210AE003DA433 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA472C9210AE003DA433 /* ArticleRowView.swift */; };
+		2A79BA4A2C921404003DA433 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA492C921404003DA433 /* Color+Extensions.swift */; };
+		2A79BA4C2C92141F003DA433 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA4B2C92141F003DA433 /* CategorySelectionView.swift */; };
+		2A79BA532C92192A003DA433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A79BA522C92192A003DA433 /* Assets.xcassets */; };
+		2AB7B29A2C93053600F527B2 /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7B2982C93053600F527B2 /* NewsSource.swift */; };
+		2AB7B29B2C93053600F527B2 /* NewsSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7B2992C93053600F527B2 /* NewsSources.swift */; };
+		51E8195871932E7C9287C7E4 /* Pods_Fractal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9B15B2D58BDE8CBE894821 /* Pods_Fractal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A24BBFC2C92096300344E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A24BBDE2C92096200344E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A24BBE52C92096200344E5E;
+			remoteInfo = Fractal;
+		};
+		2A24BC062C92096300344E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A24BBDE2C92096200344E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A24BBE52C92096200344E5E;
+			remoteInfo = Fractal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A1133CC2C930C5F0092DB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A24BBE62C92096200344E5E /* Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BBE92C92096200344E5E /* FractalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalApp.swift; sourceTree = "<group>"; };
+		2A24BBEB2C92096200344E5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A24BBF02C92096300344E5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A24BBF22C92096300344E5E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2A24BBF52C92096300344E5E /* Fractal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fractal.xcdatamodel; sourceTree = "<group>"; };
+		2A24BBFB2C92096300344E5E /* FractalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BBFF2C92096300344E5E /* FractalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalTests.swift; sourceTree = "<group>"; };
+		2A24BC052C92096300344E5E /* FractalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BC092C92096300344E5E /* FractalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalUITests.swift; sourceTree = "<group>"; };
+		2A24BC0B2C92096300344E5E /* FractalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A4C69F92C926F7F0099D365 /* RSSFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSSFeedManager.swift; path = Fractal/Managers/RSSFeedManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C69FA2C926F7F0099D365 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = Fractal/Managers/CacheManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C69FB2C926F7F0099D365 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Fractal/Managers/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C6A022C9284250099D365 /* Fractal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fractal.xcdatamodel; sourceTree = "<group>"; };
+		2A79BA2F2C920ECB003DA433 /* BookmarkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		2A79BA322C920ECB003DA433 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		2A79BA342C920ECB003DA433 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A24BBEA2C92096200344E5E /* FractalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBE92C92096200344E5E /* FractalApp.swift */; };
+		2A24BBEC2C92096200344E5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBEB2C92096200344E5E /* ContentView.swift */; };
+		2A24BBF12C92096300344E5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A24BBF02C92096300344E5E /* Preview Assets.xcassets */; };
+		2A24BBF32C92096300344E5E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBF22C92096300344E5E /* Persistence.swift */; };
+		2A24BBF62C92096300344E5E /* Fractal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBF42C92096300344E5E /* Fractal.xcdatamodeld */; };
+		2A24BC002C92096300344E5E /* FractalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BBFF2C92096300344E5E /* FractalTests.swift */; };
+		2A24BC0A2C92096300344E5E /* FractalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BC092C92096300344E5E /* FractalUITests.swift */; };
+		2A24BC0C2C92096300344E5E /* FractalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BC0B2C92096300344E5E /* FractalUITestsLaunchTests.swift */; };
+		2A4C69FD2C926F7F0099D365 /* RSSFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69F92C926F7F0099D365 /* RSSFeedManager.swift */; };
+		2A4C69FE2C926F7F0099D365 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69FA2C926F7F0099D365 /* CacheManager.swift */; };
+		2A4C69FF2C926F7F0099D365 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C69FB2C926F7F0099D365 /* NetworkManager.swift */; };
+		2A4C6A032C9284250099D365 /* Fractal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C6A012C9284250099D365 /* Fractal.xcdatamodeld */; };
+		2A79BA3E2C920ECB003DA433 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA2F2C920ECB003DA433 /* BookmarkManager.swift */; };
+		2A79BA402C920ECB003DA433 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA322C920ECB003DA433 /* NewsFeedViewModel.swift */; };
+		2A79BA412C920ECB003DA433 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA342C920ECB003DA433 /* Article.swift */; };
+		2A79BA432C920ECB003DA433 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA382C920ECB003DA433 /* BookmarksView.swift */; };
+		2A79BA442C920ECB003DA433 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA392C920ECB003DA433 /* NewsFeedView.swift */; };
+		2A79BA452C920ECB003DA433 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA3A2C920ECB003DA433 /* SettingsView.swift */; };
+		2A79BA482C9210AE003DA433 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA472C9210AE003DA433 /* ArticleRowView.swift */; };
+		2A79BA4A2C921404003DA433 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA492C921404003DA433 /* Color+Extensions.swift */; };
+		2A79BA4C2C92141F003DA433 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79BA4B2C92141F003DA433 /* CategorySelectionView.swift */; };
+		2A79BA532C92192A003DA433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A79BA522C92192A003DA433 /* Assets.xcassets */; };
+		2AB7B29A2C93053600F527B2 /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7B2982C93053600F527B2 /* NewsSource.swift */; };
+		2AB7B29B2C93053600F527B2 /* NewsSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7B2992C93053600F527B2 /* NewsSources.swift */; };
+		51E8195871932E7C9287C7E4 /* Pods_Fractal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9B15B2D58BDE8CBE894821 /* Pods_Fractal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A24BBFC2C92096300344E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A24BBDE2C92096200344E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A24BBE52C92096200344E5E;
+			remoteInfo = Fractal;
+		};
+		2A24BC062C92096300344E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A24BBDE2C92096200344E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A24BBE52C92096200344E5E;
+			remoteInfo = Fractal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A1133CC2C930C5F0092DB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A24BBE62C92096200344E5E /* Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BBE92C92096200344E5E /* FractalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalApp.swift; sourceTree = "<group>"; };
+		2A24BBEB2C92096200344E5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A24BBF02C92096300344E5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A24BBF22C92096300344E5E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2A24BBF52C92096300344E5E /* Fractal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fractal.xcdatamodel; sourceTree = "<group>"; };
+		2A24BBFB2C92096300344E5E /* FractalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BBFF2C92096300344E5E /* FractalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalTests.swift; sourceTree = "<group>"; };
+		2A24BC052C92096300344E5E /* FractalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A24BC092C92096300344E5E /* FractalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalUITests.swift; sourceTree = "<group>"; };
+		2A24BC0B2C92096300344E5E /* FractalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A4C69F92C926F7F0099D365 /* RSSFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSSFeedManager.swift; path = Fractal/Managers/RSSFeedManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C69FA2C926F7F0099D365 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = Fractal/Managers/CacheManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C69FB2C926F7F0099D365 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Fractal/Managers/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		2A4C6A022C9284250099D365 /* Fractal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fractal.xcdatamodel; sourceTree = "<group>"; };
+		2A79BA2F2C920ECB003DA433 /* BookmarkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		2A79BA322C920ECB003DA433 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		2A79BA342C920ECB003DA433 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		2A79BA382C920ECB003DA433 /* BookmarksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		2A79BA392C920ECB003DA433 /* NewsFeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
+		2A79BA3A2C920ECB003DA433 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A79BA472C9210AE003DA433 /* ArticleRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
+		2A79BA492C921404003DA433 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extensions.swift"; path = "Fractal/Extensions/Color+Extensions.swift"; sourceTree = "<group>"; };
+		2A79BA4B2C92141F003DA433 /* CategorySelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
+		2A79BA522C92192A003DA433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB7B2982C93053600F527B2 /* NewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsSource.swift; path = Fractal/Models/NewsSource.swift; sourceTree = SOURCE_ROOT; };
+		2AB7B2992C93053600F527B2 /* NewsSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsSources.swift; path = Fractal/Models/NewsSources.swift; sourceTree = SOURCE_ROOT; };
+		2F9B15B2D58BDE8CBE894821 /* Pods_Fractal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fractal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0055DB3781517EF96F6D7C /* Pods-Fractal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fractal.release.xcconfig"; path = "Target Support Files/Pods-Fractal/Pods-Fractal.release.xcconfig"; sourceTree = "<group>"; };
+		DEAEA1DA57C08FFBDEF7F77F /* Pods-Fractal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fractal.debug.xcconfig"; path = "Target Support Files/Pods-Fractal/Pods-Fractal.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A24BBE32C92096200344E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E8195871932E7C9287C7E4 /* Pods_Fractal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BBF82C92096300344E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BC022C92096300344E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1133CD2C930C5F0092DB5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A1133CC2C930C5F0092DB5B /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "Fractal/Preview Content";
+			sourceTree = "<group>";
+		};
+		2A24BBDD2C92096200344E5E = {
+			isa = PBXGroup;
+			children = (
+				2A4C6A012C9284250099D365 /* Fractal.xcdatamodeld */,
+				2A1133CD2C930C5F0092DB5B /* Preview Content */,
+				2A79BA4F2C921833003DA433 /* Assets */,
+				2A79BA492C921404003DA433 /* Color+Extensions.swift */,
+				2A79BA302C920ECB003DA433 /* Managers */,
+				2A79BA352C920ECB003DA433 /* Models */,
+				2A79BA332C920ECB003DA433 /* ViewModels */,
+				2A79BA3B2C920ECB003DA433 /* Views */,
+				2A24BBE82C92096200344E5E /* Fractal */,
+				2A24BBFE2C92096300344E5E /* FractalTests */,
+				2A24BC082C92096300344E5E /* FractalUITests */,
+				2A24BBE72C92096200344E5E /* Products */,
+				CD43BDA0154D473EDFFDE7C7 /* Pods */,
+				7AAC0E66AAEDAFB9396D5635 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A24BBE72C92096200344E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A24BBE62C92096200344E5E /* Fractal.app */,
+				2A24BBFB2C92096300344E5E /* FractalTests.xctest */,
+				2A24BC052C92096300344E5E /* FractalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A24BBE82C92096200344E5E /* Fractal */ = {
+			isa = PBXGroup;
+			children = (
+				2A24BBEF2C92096300344E5E /* Preview Content */,
+				2A24BBE92C92096200344E5E /* FractalApp.swift */,
+				2A24BBEB2C92096200344E5E /* ContentView.swift */,
+				2A24BBF22C92096300344E5E /* Persistence.swift */,
+				2A24BBF42C92096300344E5E /* Fractal.xcdatamodeld */,
+			);
+			path = Fractal;
+			sourceTree = "<group>";
+		};
+		2A24BBEF2C92096300344E5E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A24BBF02C92096300344E5E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A24BBFE2C92096300344E5E /* FractalTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A24BBFF2C92096300344E5E /* FractalTests.swift */,
+			);
+			path = FractalTests;
+			sourceTree = "<group>";
+		};
+		2A24BC082C92096300344E5E /* FractalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A24BC092C92096300344E5E /* FractalUITests.swift */,
+				2A24BC0B2C92096300344E5E /* FractalUITestsLaunchTests.swift */,
+			);
+			path = FractalUITests;
+			sourceTree = "<group>";
+		};
+		2A79BA302C920ECB003DA433 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2A79BA2F2C920ECB003DA433 /* BookmarkManager.swift */,
+				2A4C69FA2C926F7F0099D365 /* CacheManager.swift */,
+				2A4C69FB2C926F7F0099D365 /* NetworkManager.swift */,
+				2A4C69F92C926F7F0099D365 /* RSSFeedManager.swift */,
+			);
+			name = Managers;
+			path = Fractal/Managers;
+			sourceTree = "<group>";
+		};
+		2A79BA332C920ECB003DA433 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A79BA322C920ECB003DA433 /* NewsFeedViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Fractal/ViewModels;
+			sourceTree = "<group>";
+		};
+		2A79BA352C920ECB003DA433 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A79BA342C920ECB003DA433 /* Article.swift */,
+				2AB7B2982C93053600F527B2 /* NewsSource.swift */,
+				2AB7B2992C93053600F527B2 /* NewsSources.swift */,
+			);
+			name = Models;
+			path = Fractal/Models;
+			sourceTree = "<group>";
+		};
+		2A79BA3B2C920ECB003DA433 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A79BA4B2C92141F003DA433 /* CategorySelectionView.swift */,
+				2A79BA382C920ECB003DA433 /* BookmarksView.swift */,
+				2A79BA472C9210AE003DA433 /* ArticleRowView.swift */,
+				2A79BA392C920ECB003DA433 /* NewsFeedView.swift */,
+				2A79BA3A2C920ECB003DA433 /* SettingsView.swift */,
+			);
+			name = Views;
+			path = Fractal/Views;
+			sourceTree = "<group>";
+		};
+		2A79BA4F2C921833003DA433 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2A79BA522C92192A003DA433 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7AAC0E66AAEDAFB9396D5635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9B15B2D58BDE8CBE894821 /* Pods_Fractal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD43BDA0154D473EDFFDE7C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEAEA1DA57C08FFBDEF7F77F /* Pods-Fractal.debug.xcconfig */,
+				DA0055DB3781517EF96F6D7C /* Pods-Fractal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A24BBE52C92096200344E5E /* Fractal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A24BC0F2C92096300344E5E /* Build configuration list for PBXNativeTarget "Fractal" */;
+			buildPhases = (
+				20C9503C63E9F589CA890289 /* [CP] Check Pods Manifest.lock */,
+				2A24BBE22C92096200344E5E /* Sources */,
+				2A24BBE32C92096200344E5E /* Frameworks */,
+				2A24BBE42C92096200344E5E /* Resources */,
+				167D9E6273D614A18D2A7C14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fractal;
+			productName = Fractal;
+			productReference = 2A24BBE62C92096200344E5E /* Fractal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A24BBFA2C92096300344E5E /* FractalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A24BC122C92096300344E5E /* Build configuration list for PBXNativeTarget "FractalTests" */;
+			buildPhases = (
+				2A24BBF72C92096300344E5E /* Sources */,
+				2A24BBF82C92096300344E5E /* Frameworks */,
+				2A24BBF92C92096300344E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A24BBFD2C92096300344E5E /* PBXTargetDependency */,
+			);
+			name = FractalTests;
+			productName = FractalTests;
+			productReference = 2A24BBFB2C92096300344E5E /* FractalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A24BC042C92096300344E5E /* FractalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A24BC152C92096300344E5E /* Build configuration list for PBXNativeTarget "FractalUITests" */;
+			buildPhases = (
+				2A24BC012C92096300344E5E /* Sources */,
+				2A24BC022C92096300344E5E /* Frameworks */,
+				2A24BC032C92096300344E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A24BC072C92096300344E5E /* PBXTargetDependency */,
+			);
+			name = FractalUITests;
+			productName = FractalUITests;
+			productReference = 2A24BC052C92096300344E5E /* FractalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A24BBDE2C92096200344E5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2A24BBE52C92096200344E5E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2A24BBFA2C92096300344E5E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2A24BBE52C92096200344E5E;
+					};
+					2A24BC042C92096300344E5E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2A24BBE52C92096200344E5E;
+					};
+				};
+			};
+			buildConfigurationList = 2A24BBE12C92096200344E5E /* Build configuration list for PBXProject "Fractal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A24BBDD2C92096200344E5E;
+			packageReferences = (
+			);
+			productRefGroup = 2A24BBE72C92096200344E5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A24BBE52C92096200344E5E /* Fractal */,
+				2A24BBFA2C92096300344E5E /* FractalTests */,
+				2A24BC042C92096300344E5E /* FractalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A24BBE42C92096200344E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A24BBF12C92096300344E5E /* Preview Assets.xcassets in Resources */,
+				2A79BA532C92192A003DA433 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BBF92C92096300344E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BC032C92096300344E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		167D9E6273D614A18D2A7C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20C9503C63E9F589CA890289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fractal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A24BBE22C92096200344E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A79BA412C920ECB003DA433 /* Article.swift in Sources */,
+				2A24BBF32C92096300344E5E /* Persistence.swift in Sources */,
+				2A4C6A032C9284250099D365 /* Fractal.xcdatamodeld in Sources */,
+				2A79BA432C920ECB003DA433 /* BookmarksView.swift in Sources */,
+				2A4C69FD2C926F7F0099D365 /* RSSFeedManager.swift in Sources */,
+				2A79BA402C920ECB003DA433 /* NewsFeedViewModel.swift in Sources */,
+				2A24BBF62C92096300344E5E /* Fractal.xcdatamodeld in Sources */,
+				2A79BA452C920ECB003DA433 /* SettingsView.swift in Sources */,
+				2A79BA3E2C920ECB003DA433 /* BookmarkManager.swift in Sources */,
+				2A79BA4A2C921404003DA433 /* Color+Extensions.swift in Sources */,
+				2A79BA442C920ECB003DA433 /* NewsFeedView.swift in Sources */,
+				2A4C69FF2C926F7F0099D365 /* NetworkManager.swift in Sources */,
+				2A24BBEC2C92096200344E5E /* ContentView.swift in Sources */,
+				2A24BBEA2C92096200344E5E /* FractalApp.swift in Sources */,
+				2A4C69FE2C926F7F0099D365 /* CacheManager.swift in Sources */,
+				2A79BA4C2C92141F003DA433 /* CategorySelectionView.swift in Sources */,
+				2AB7B29B2C93053600F527B2 /* NewsSources.swift in Sources */,
+				2A79BA482C9210AE003DA433 /* ArticleRowView.swift in Sources */,
+				2AB7B29A2C93053600F527B2 /* NewsSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BBF72C92096300344E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A24BC002C92096300344E5E /* FractalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A24BC012C92096300344E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A24BC0C2C92096300344E5E /* FractalUITestsLaunchTests.swift in Sources */,
+				2A24BC0A2C92096300344E5E /* FractalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A24BBFD2C92096300344E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A24BBE52C92096200344E5E /* Fractal */;
+			targetProxy = 2A24BBFC2C92096300344E5E /* PBXContainerItemProxy */;
+		};
+		2A24BC072C92096300344E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A24BBE52C92096200344E5E /* Fractal */;
+			targetProxy = 2A24BC062C92096300344E5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A24BC0D2C92096300344E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A24BC0E2C92096300344E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A24BC102C92096300344E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAEA1DA57C08FFBDEF7F77F /* Pods-Fractal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fractal/Preview Content\"";
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.Fractal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A24BC112C92096300344E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0055DB3781517EF96F6D7C /* Pods-Fractal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fractal/Preview Content\"";
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.Fractal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A24BC132C92096300344E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.FractalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fractal";
+			};
+			name = Debug;
+		};
+		2A24BC142C92096300344E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.FractalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fractal";
+			};
+			name = Release;
+		};
+		2A24BC162C92096300344E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.FractalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fractal;
+			};
+			name = Debug;
+		};
+		2A24BC172C92096300344E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94B4TD6624;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rotoole1230.FractalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fractal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A24BBE12C92096200344E5E /* Build configuration list for PBXProject "Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A24BC0D2C92096300344E5E /* Debug */,
+				2A24BC0E2C92096300344E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A24BC0F2C92096300344E5E /* Build configuration list for PBXNativeTarget "Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A24BC102C92096300344E5E /* Debug */,
+				2A24BC112C92096300344E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A24BC122C92096300344E5E /* Build configuration list for PBXNativeTarget "FractalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A24BC132C92096300344E5E /* Debug */,
+				2A24BC142C92096300344E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A24BC152C92096300344E5E /* Build configuration list for PBXNativeTarget "FractalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A24BC162C92096300344E5E /* Debug */,
+				2A24BC172C92096300344E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A24BBF42C92096300344E5E /* Fractal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A24BBF52C92096300344E5E /* Fractal.xcdatamodel */,
+			);
+			currentVersion = 2A24BBF52C92096300344E5E /* Fractal.xcdatamodel */;
+			path = Fractal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		2A4C6A012C9284250099D365 /* Fractal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A4C6A022C9284250099D365 /* Fractal.xcdatamodel */,
+			);
+			currentVersion = 2A4C6A022C9284250099D365 /* Fractal.xcdatamodel */;
+			name = Fractal.xcdatamodeld;
+			path = /Users/ryanotoole/Documents/Ryans_iOS_Projects/Fractal/Fractal/Fractal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A24BBDE2C92096200344E5E /* Project object */;
+}
